@@ -38,10 +38,19 @@
 
 + Cloud
   + Azure
-    + Azure Functions 
+    + Azure Functions
+    + Blob Storage
+    + Kubernetes Services
+    + Azure Active Directory
+    + SQL Databases
+    + Data Factories
+    + Synapse Analitics
   + AWS
     + Lambda
     + API Gateway
+    + S3
+    + RDS
+    + IAM
 
 + Power BI
   + DAX
