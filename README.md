@@ -1,111 +1,129 @@
-# Data Engineering - ETL, Apache Airflow and Spark, FastAPI, SQL, Data Warehouse, Data Analysis and Data Visualization
+# Data Engineering - ETL, Apache Airflow and Spark, FastAPI, SQL, Data Warehouse, Data Analysis and Data Visualization, Docker and Kubernetes
 
 ### Built with
 
-+ Apache 
-  + Airflow
-  + Spark
+- Apache
 
-+ API
-  + FastAPI
-    +  sqlalchemy
-    +  pydantic
-    +  alembic 
-    + pytest
+  - Airflow
+  - Spark
 
-+ Python
-  + Pandas
-  + matplotlib
-  + seaborn
-  + psycopg2
-  + requests
-  + sqlalchemy
-  + dotenv
-  + Tools:
-    + VSCode
-    + Jupyter Notebook
+- API
 
-+ SQL
-	+ SQL Server
-	+ PostgreSQL
-  + Tools:
-	  + Azure Data Studio
-	  + Dbeaver
+  - FastAPI
+    - sqlalchemy
+    - pydantic
+    - alembic
+    - pytest
 
-+ Data Warehouse
-  + PostgreSQL
-  + Star Schema
+- Python
 
-+ Cloud
-  + Azure
-    + Azure Functions
-    + Blob Storage
-    + Kubernetes Services
-    + Azure Active Directory
-    + SQL Databases
-    + Data Factories
-    + Synapse Analitics
-  + AWS
-    + Lambda
-    + API Gateway
-    + S3
-    + RDS
-    + IAM
+  - Pandas
+  - matplotlib
+  - seaborn
+  - psycopg2
+  - requests
+  - sqlalchemy
+  - dotenv
+  - Tools:
+    - VSCode
+    - Jupyter Notebook
 
-+ Power BI
-  + DAX
-  + M
-  
-+ CI/CD
-  + GitHub Actions
+- SQL
 
+  - SQL Server
+  - PostgreSQL
+  - Tools:
+    - Azure Data Studio
+    - Dbeaver
+
+- Data Warehouse
+
+  - PostgreSQL
+  - Star Schema
+
+- Cloud
+
+  - Azure
+    - Azure Functions
+    - Blob Storage
+    - Kubernetes Services
+    - Azure Active Directory
+    - SQL Databases
+    - Data Factories
+    - Synapse Analitics
+  - AWS
+    - Lambda
+    - API Gateway
+    - S3
+    - RDS
+    - IAM
+
+- Power BI
+  - DAX
+  - M
+- CI/CD
+  - GitHub Actions
 
 ## [SQL](/DB)
-Here we have used Docker to run SQL Server on Mac and ContosoRetailDW as database. We have created [ER Diagram](/DB/ER%20Diagram/) with draw.io, and written [SQL Query](/DB/SQL%20Query/) with CTE, JOINS, Triggers, Procedures, Variables etc., and have [analyzed data with Python](/DB/Analytics/Python/): 
-+ [SQL Query](/DB/SQL%20Query/)
-+ [ER Diagram](/DB/ER%20Diagram/)
-+ [Docker - SQL Server on Mac](/DB/Docker/)
-+ [data analysis and data visualization](/DB/Analytics/Python/) with Python.
+
+Here we have used Docker to run SQL Server on Mac and ContosoRetailDW as database. We have created [ER Diagram](/DB/ER%20Diagram/) with draw.io, and written [SQL Query](/DB/SQL%20Query/) with CTE, JOINS, Triggers, Procedures, Variables etc., and have [analyzed data with Python](/DB/Analytics/Python/):
+
+- [SQL Query](/DB/SQL%20Query/)
+- [ER Diagram](/DB/ER%20Diagram/)
+- [Docker - SQL Server on Mac](/DB/Docker/)
+- [data analysis and data visualization](/DB/Analytics/Python/) with Python.
 
 ## [Data Warehouse](/Data%20Warehouse/)
-In this example we have created Data Warehouse with PostgreSQL where we have used star schema with "sales" fact table and "calendar", "store", "product" and "channel" as dimension tables. Fact table contains measure columns which are numeric and monetary values and FK to dimension tables. On the other side dimension tables contain descriptive information and they describe "who, what, where, when, how, and why". Dimension table usually contain big number of columns but much less rows than fact tables which is the case with our example as well. 
- + [SQL Query](/Data%20Warehouse/SQL%20Query/)
- ### Data Warehouse - Star Schema
+
+In this example we have created Data Warehouse with PostgreSQL where we have used star schema with "sales" fact table and "calendar", "store", "product" and "channel" as dimension tables. Fact table contains measure columns which are numeric and monetary values and FK to dimension tables. On the other side dimension tables contain descriptive information and they describe "who, what, where, when, how, and why". Dimension table usually contain big number of columns but much less rows than fact tables which is the case with our example as well.
+
+- [SQL Query](/Data%20Warehouse/SQL%20Query/)
+
+### Data Warehouse - Star Schema
+
   <img src="/Data Warehouse/DW - ER Diagram.png" alt="Data Warehouse - Star Schema" title=" Data Warehouse - Star Schema">
 
 ## [Data Visualization with Power BI](/PowerBI)
+
 In this example we have used data from ContosoRetailDW database were we have created multiple [DAX queries](/PowerBI/DAX.txt) and [Dashboard](PowerBI/Dashboard.png). To get data we have connected directly to SQL Server.
 <img src="PowerBI/Dashboard.png" alt="Contosodb Dashboard" title="Contosodb Dashboard">
 
 ## [Python](/Python)
 
 ### [Data Analysis](/DB/Analytics/Python/)
+
 In this example we have showed how to connect to SQL Server with [Python, analyze and visualize data](DB/Analytics/Python/). Here is the list of libraires we have used:
- + pandas
- + numpy
- + seaborn
- + matplotlib
- + sqlalchemy
- + dotenv
+
+- pandas
+- numpy
+- seaborn
+- matplotlib
+- sqlalchemy
+- dotenv
 
 ### [Big Data](/Python/big_data/)
+
 In this example we have read big data from CSV file (9GB) and SQL Server database. Then we used Pandas group by to calculate the total amount.
 
 ### [Generator](/Python/Generator)
+
 In this example we have created generator function to GET data from API. This way we yield the JSON response one chunk at a time.
 
 ## [Apache Airflow](/Apache/Airflow)
+
 In this example we have created data pipeline with Apache Airflow. We have used different Airflow operators and sensors to extract, transform and load data. We have extract data from SQL Server, API, SFTP Server and store it in Postgres DB. Here is the list of Hooks, Operators and Sensors we have used:
- + PythonOperator
- + BashOperator
- + SFTPOperator
- + PostgresOperator
- + DummyOperator
- + ExternalTaskSensor
- + BaseHook
- + MsSqlHook
- 
- ### ETL
+
+- PythonOperator
+- BashOperator
+- SFTPOperator
+- PostgresOperator
+- DummyOperator
+- ExternalTaskSensor
+- BaseHook
+- MsSqlHook
+
+### ETL
+
  <img src="Apache/Airflow/etl_to_db.png" alt="ETL to DB" title="ETL to DB">
  
  ### External Task Sensor and Processing
@@ -127,5 +145,9 @@ In this example we have created data pipeline with Apache Airflow. We have used 
   
  ## [CI/CD - GitHub Actions](/.github/workflows)
  Here we are using GitHub Actions to test our FastAPI code everytime after we push or pull new code to or from GitHub.
- 
- 
+
+## [Docker](/Docker/)
+
+Docker is a containerization platform that simplifies the packaging and deployment of applications with all their dependencies, ensuring consistency and portability across different environments. Here are the examples we built with Docker:
+
+- [Apache Airflow](/Docker/Airflow/)
