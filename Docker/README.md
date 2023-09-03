@@ -1,4 +1,4 @@
-Here is the list of Docker examples we build:
+Here is the list of Docker examples we built:
 
 - [Airflow](/Airflow/)
 
