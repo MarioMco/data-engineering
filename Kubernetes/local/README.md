@@ -76,4 +76,5 @@ To add dags in the airflow follow these steps:
     - `subPath: ""`
   - `kubectl create secret generic airflow-ssh-git-secret --from-file=gitSshKey=<sshkey_path>`
     - In `values.yaml` uncomment `sshKeySecret` and add: `sshKeySecret: airflow-ssh-git-secret`
+- Upgrade airflow instance again: `helm upgrade --install airflow apache-airflow/airflow -n airflow -f values.yaml --debug`
 - Check git-sync logs: `kubectl logs <pod_airflow_scheduler> -c git-sync -n airflow`
