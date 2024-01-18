@@ -52,15 +52,15 @@ Here is a list of useful Kubernetes commands:
 
 9. Context Switching:
 
-`kubectl config use-context <context-name>`: Switch between different clusters or contexts.
+- `kubectl config use-context <context-name>`: Switch between different clusters or contexts.
 
 10. Resource Deletion:
 
-`kubectl delete <resource> <resource-name>`: Delete a specific resource.
+- `kubectl delete <resource> <resource-name>`: Delete a specific resource.
 
 11. Apply Configuration:
 
-`kubectl apply -f <file-or-directory>`: Apply a configuration from a file or directory.
+- `kubectl apply -f <file-or-directory>`: Apply a configuration from a file or directory.
 
 12. Rolling Updates and Rollbacks:
 

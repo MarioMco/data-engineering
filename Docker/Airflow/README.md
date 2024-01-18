@@ -21,4 +21,13 @@ Before any Apache Airflow installation we must make sure we have Docker and vsco
 10. To stop Docker airflow run `docker-compose stop` and to start it again `docker-compose start` or restart with `docker-compose restart`
 11. If you make changes to your docker-compose.yaml file or you want to recreate your containers with fresh configurations then run `docker-compose up` again.
 
-   <img src="AirflowSignIn.png" alt="Contosodb Dashboard" title="Contosodb Dashboard">
+   <img src="pics/AirflowSignIn.png" alt="Airflow Sign In Page" title="Airflow Sign In Page">
+
+### Flower Monitoring (CeleryExecutor)
+
+Flower is a real-time web-based monitoring tool for Celery. It provides a user-friendly interface for monitoring and managing Celery clusters and tasks. With Flower, you can view the status of tasks, inspect worker logs, and even control the execution of tasks in your Celery cluster through a web dashboard.
+
+- To start flower run in terminal: `docker-compose --profile flower up -d`. If Airlfow is already runing than first run: `docker-compose down`
+- Open your web browser and go to `localhost:5555`. You should see Flower dashboard.
+
+<img src="pics/FlowerDashboard.png" alt="Flower Dashboard" title="Flower Dashboard">
