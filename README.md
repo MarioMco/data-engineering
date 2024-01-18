@@ -128,10 +128,10 @@ In this example we have created data pipeline with Apache Airflow. We have used 
 
 ### ETL
 
- <img src="Apache/Airflow/etl_to_db.png" alt="ETL to DB" title="ETL to DB">
+ <img src="Apache/Airflow/pics/etl_to_db.png" alt="ETL to DB" title="ETL to DB">
  
  ### External Task Sensor and Processing
- <img src="Apache/Airflow/etl_processing.png" width="300" alt="ETL and Processing" title="ETL and Processing">
+ <img src="Apache/Airflow/pics/etl_processing.png" width="300" alt="ETL and Processing" title="ETL and Processing">
  
  ## [Apache Spark](/Apache/Spark)
  In this [example](/Apache/Spark/spark-example.ipynb) we have used Apache Spark to fetch data from Blob Storage. We have processed it and returned it back to Blob Storage as multiple parquet file organized in year and month directories. Also, we have showed how to: clean data, remove and create new columns, join, group by and analyze data.
