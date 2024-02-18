@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: contosodb
+    description: 'This is a source for the connection with contosodb'
+    database: contosodb
+    schema: public
+    tables:
+      - name: dimproducts
+        description: 'Products info'
+      - name: dimstores
+        description: 'Stores info'
+      - name: fctsales
+        description: "{{ doc('Sales') }}"

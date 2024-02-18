@@ -1,0 +1,1 @@
+{{ macro_generate_profit(2) }}

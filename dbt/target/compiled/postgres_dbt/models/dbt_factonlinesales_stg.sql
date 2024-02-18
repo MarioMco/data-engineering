@@ -1,0 +1,1 @@
+select productkey, salesquantity, salesamount, discountamount from public.factonlinesales

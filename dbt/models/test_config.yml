@@ -1,0 +1,30 @@
+models:
+  - name: stg_contoso__products
+    description: Products table columns testing.
+    columns:
+      - name: productname
+        description: Here we are testing if productname column has empty strin, null values and are all the values unique.
+        tests:
+          - string_not_empty 
+      - name: productkey
+        description: Here we are testing if productkey column has null values and are all the values unique.
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_contoso__channels
+    description: Channels table columns testing.
+    columns:
+      - name: channelname
+        description: Here we are testing if channelname column has empty string and only values from the list are allowed to be in this column.
+        tests:
+          - string_not_empty
+          - accepted_values:
+              values: ['Store', 'Online', 'Catalog', 'Reseller']
+
+  - name: stg_contoso__sales
+    tests:
+      - dbt_expectations.expect_table_row_count_to_equal_other_table:
+          compare_model: ref("sales")
+
+

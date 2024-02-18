@@ -1,4 +1,4 @@
-# Data Engineering - ETL, Apache Airflow and Spark, FastAPI, SQL, Data Warehouse, Data Analysis and Data Visualization, Docker and Kubernetes
+# Data Engineering - ETL, Apache Airflow and Spark, FastAPI, SQL, Data Warehouse, dbt, Data Analysis and Data Visualization, Docker and Kubernetes
 
 ### Built with
 
@@ -40,6 +40,14 @@
 
   - PostgreSQL
   - Star Schema
+
+- dbt
+  - models
+  - macros
+  - tests
+  - seeds
+  - dbt_packages
+  - dbt documentation
 
 - Cloud
 
@@ -91,6 +99,12 @@ In this example we have created Data Warehouse with PostgreSQL where we have use
 
 In this example we have used data from ContosoRetailDW database were we have created multiple [DAX queries](/PowerBI/DAX.txt) and [Dashboard](PowerBI/Dashboard.png). To get data we have connected directly to SQL Server.
 <img src="PowerBI/Dashboard.png" alt="Contosodb Dashboard" title="Contosodb Dashboard">
+
+## [dbt](/dbt)
+
+dbt is an open-source tool for transforming and modeling data within data warehouses using SQL. It simplifies the process by allowing users to define transformations, manage dependencies, test code, and generate documentation, all while leveraging SQL's power for data manipulation. In our example we used it with PostgreSQL database.
+
+<img src="dbt/pics/Lineage graph.png" alt="dbt lineage graph" title="dbt lineage graph">
 
 ## [Python](/Python)
 
