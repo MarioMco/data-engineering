@@ -24,6 +24,8 @@
   - requests
   - sqlalchemy
   - dotenv
+  - beautifulsoup
+  - scrapy
   - Tools:
     - VSCode
     - Jupyter Notebook
@@ -126,6 +128,10 @@ In this example we have read big data from CSV file (9GB) and SQL Server databas
 ### [Generator](/Python/Generator)
 
 In this example we have created generator function to GET data from API. This way we yield the JSON response one chunk at a time.
+
+### [Web Scraping](/Python/web_scraping)
+
+In this example we have used beautifulsoup and scrapy to webscrape the data from a webshop.
 
 ## [Apache Airflow](/Apache/Airflow)
 
