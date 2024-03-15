@@ -131,7 +131,9 @@ In this example we have created generator function to GET data from API. This wa
 
 ### [Web Scraping](/Python/web_scraping)
 
-In this example we have used beautifulsoup and scrapy to webscrape the data from a webshop.
+In this example we have used [Beautifulsoup](./Python/web_scraping/beautifulsoup/) and [Scrapy](./Python/web_scraping/scrapy/webshopscraper/) to webscrape the data from a webshop.
+
+<img src="./Python/web_scraping/scrapy/webshopscraper/pics/webshop.png" alt="Webshop" title="Webshop">
 
 ## [Apache Airflow](/Apache/Airflow)
 
