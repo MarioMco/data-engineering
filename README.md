@@ -1,4 +1,4 @@
-# Data Engineering - ETL, Apache Airflow and Spark, FastAPI, SQL, Data Warehouse, dbt, Data Analysis and Data Visualization, Docker and Kubernetes, Web scraping
+## Data Engineering - ETL, Apache Airflow and Spark, FastAPI, SQL, Data Warehouse, dbt, Data Analysis and Data Visualization, Docker and Kubernetes, Web scraping
 
 ### Built with
 
@@ -6,6 +6,7 @@
 
   - Airflow
   - Spark
+  - Kafka
 
 - API
 
@@ -67,6 +68,7 @@
     - S3
     - RDS
     - IAM
+    - EC2
 
 - Power BI
   - DAX
@@ -75,6 +77,7 @@
   - GitHub Actions
 - Docker
   - Apache Airflow
+  - Docker Dev Environment
 - Kubernetes
   - Apache Airflow
 
@@ -177,9 +180,14 @@ In this example we have created data pipeline with Apache Airflow. We have used 
 Docker is a containerization platform that simplifies the packaging and deployment of applications with all their dependencies, ensuring consistency and portability across different environments. Here are the examples we built with Docker:
 
 - [Apache Airflow](/Docker/Airflow/)
+- [Dev Environment](/Docker/dev_environment/)
 
 ## [Kubernetes](/Kubernetes/)
 
 Kubernetes is an open-source container orchestration system for automating software deployment, scaling, and management. Here are the examples we built with Kubernetes:
 
 - [Apache Airflow on Kubernetes Kind](/Kubernetes/local/)
+
+## [AWS](/AWS/)
+
+- [Apache Airflow on EC2](/AWS/EC2-Airflow/)
